@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #000000;
+    color: #eee;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.animate-container {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2ecc71;
+    animation: fadeInScale 2s ease-in-out forwards;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #2ecc71;
+}
+
+/* Secciones */
+.section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section.bg-dark {
+    background: #000000;
+    color: #ffffff;
+}
+
+.section.bg-light {
+    background: #000000;
+    color: #ffffff;
+}
+
+.services-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.services-list li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+/* Contenedor de la sección "Nuestros Servicios" */
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para asegurar que sea responsivo */
+    gap: 1rem;
+}
+
+/* Contenedor de la lista de servicios */
+.services-list-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.responsive-video {
+    width: 300px; /* Cambia este valor para ajustar el ancho */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones del video */
+    margin: 10px auto; /* Espaciado y centrado */
+    display: block; /* Hace que los videos sean elementos bloque */
+}
+
+.video-container {
+    display: flex; /* Habilita diseño Flexbox */
+    flex-wrap: wrap; /* Permite que los videos salten a otra fila si el espacio es insuficiente */
+    gap: 1rem; /* Espacio entre videos */
+    justify-content: center; /* Alinea los videos al centro */
+    align-items: center; /* Centra verticalmente los videos */
+}
+
+.video-container video {
+    width: 45%; /* Cada video ocupará el 45% del ancho del contenedor */
+    max-width: 600px; /* Tamaño máximo del video */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Sombra para estilo */
+}
+
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition:  0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background: #16a085;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #1abc9c;
+}
+
+/* Footer */
+.footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
