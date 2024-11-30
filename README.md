@@ -1,4 +1,4 @@
-# Proyecto: Página Web Responsiva
+# Página Web Responsiva
 
 ## Descripción
 Este proyecto es una página web interactiva y responsiva que incluye una sección de videos destacados, un diseño moderno enfocado en la accesibilidad y optimización visual, y un estilo adaptable para diferentes dispositivos.
@@ -20,3 +20,5 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local:
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
+
+este proyecto fue desarrollado por Darcy Vega

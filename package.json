@@ -1,0 +1,24 @@
+{
+    "name": "tecnova-web",
+    "version": "1.0.0",
+    "description": "Servidor básico para el sitio web de TechNova.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node servidor/server.js",
+        "dev": "nodemon servidor/server.js"
+    },
+    "keywords": [
+        "tecnología",
+        "servidor",
+        "API",
+        "Node.js"
+    ],
+    "author": "Tu Nombre",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}
