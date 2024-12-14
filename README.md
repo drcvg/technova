@@ -14,11 +14,17 @@ Este proyecto es una página web interactiva y responsiva que incluye una secci�
 - **CSS3**: Diseño y estilos responsivos con Flexbox, Grid y media queries.
 - **Git & GitHub**: Control de versiones y alojamiento del código.
 
-## Instalación
-Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local:
+## **Instrucciones para instalar y ejecutar el servidor localmente**
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+### **1. Requisitos previos**
+Asegúrate de tener instalados los siguientes programas en tu sistema:
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [Git](https://git-scm.com/)
+- Navegador web moderno
+
+### **2. Clonar el repositorio**
+Clona el repositorio de GitHub a tu máquina local utilizando el siguiente comando:
+```bash
+git clone <https://github.com/drcvg/technova>
 
 este proyecto fue desarrollado por Darcy Vega

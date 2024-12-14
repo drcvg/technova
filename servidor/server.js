@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
+const cors = require('cors');
+app.use(cors());
+
 
 // Middleware para servir archivos estáticos desde la carpeta 'public'
 app.use(express.static('public'));
@@ -11,13 +14,12 @@ app.get('/', (req, res) => {
 });
 
 // API simple que devuelve datos JSON
-app.get('/api/proyectos', (req, res) => {
-    const proyectos = [
-        { id: 1, nombre: 'Análisis de Datos', descripcion: 'Exploración avanzada de datos empresariales.' },
-        { id: 2, nombre: 'Implementación de IA', descripcion: 'Creación de modelos de aprendizaje automático.' },
-        { id: 3, nombre: 'Software Personalizado', descripcion: 'Soluciones a medida para empresas.' }
-    ];
-    res.json(proyectos);
+app.get('/api/projects', (req, res) => {
+    res.json([
+        { id: 1, name: "Análisis de Datos", description: "Transformamos datos en insights accionables." },
+        { id: 2, name: "Implementación de IA", description: "Creamos sistemas inteligentes para optimizar procesos." },
+        { id: 3, name: "Transformación Digital", description: "Llevamos tu negocio al mundo digital." }
+    ]);
 });
 
 // Manejo de rutas no encontradas
